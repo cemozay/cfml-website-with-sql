@@ -1,10 +1,10 @@
 ﻿<cfset myName = "Ali Baba's Farm">
 <cfset pagesArray = [
-    ["Home", "index.cfm", "Home"],
-    ["Records", "records.cfm", "Records"],
-    ["Inspection", "inspection_tracing.cfm", "Inspection Tracing"],
-    ["Produce", "produce.cfm", "Milk Production"],
-    ["Consumption", "feed_consumption.cfm", "Feed Consumption"]
+    ["Home", "\cfml-website-with-sql\index.cfm", "Home"],
+    ["Records", "\cfml-website-with-sql\pages\records.cfm", "Records"],
+    ["Inspection", "\cfml-website-with-sql\pages\inspection_tracing.cfm", "Inspection Tracing"],
+    ["Produce", "\cfml-website-with-sql\pages\produce.cfm", "Milk Production"],
+    ["Consumption", "\cfml-website-with-sql\pages\feed_consumption.cfm", "Feed Consumption"]
 ]>
 
 <!DOCTYPE html>
