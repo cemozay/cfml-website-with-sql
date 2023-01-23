@@ -48,7 +48,7 @@
                 <span class="navbar-toggler-icon"></span>
             </a>
             <!--offcanvas button-->
-            <a href="index.cfm" class="navbar-brand fw-bold fs-3 me-auto"><cfoutput>#myName#</cfoutput></a>
+            <a href="\cfml-website-with-sql\index.cfm" class="navbar-brand fw-bold fs-3 me-auto"><cfoutput>#myName#</cfoutput></a>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

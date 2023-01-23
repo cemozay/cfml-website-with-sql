@@ -18,32 +18,24 @@ SELECT * FROM [WorkCube].[dbo].[animal]
                     <div class="card h-100">
                         <div class="card-header">Records</div>
                         <div class="card-body">
-                        <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <!--Table-->
-                                        <table class="table table-striped table-hover align-middle">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">#</th>
-                                                    <th scope="col">Animals</th>
-                                                    <th scope="col">Count</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <cfoutput query="animalinfo">
-                                                    <tr>
-                                                        <td>#animalinfo.animal_id#</td>
-                                                        <td>#animalinfo.name#</td>
-                                                        <td>#animalinfo.number#</td>
-                                                    </tr>
-                                                </cfoutput>
-                                            </tbody>
-                                        </table>
-                                        <!--Table-->
-                                    </div>
-                                </div>
-                            </div>
+                            <table class="table table-striped table-hover align-middle">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Animals</th>
+                                        <th scope="col">Count</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <cfoutput query="animalinfo">
+                                        <tr>
+                                            <td>#animalinfo.animal_id#</td>
+                                            <td>#animalinfo.name#</td>
+                                            <td>#animalinfo.number#</td>
+                                        </tr>
+                                    </cfoutput>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -53,24 +45,24 @@ SELECT * FROM [WorkCube].[dbo].[animal]
                     <div class="card h-100">
                         <div class="card-header">Inspection Tracing</div>
                         <div class="card-body">
-                        <table class="table table-striped table-hover align-middle">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Animals</th>
-                                <th scope="col">Last Inspection Date</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <cfoutput query="animalinfo">
-                                <tr>
-                                    <td>#animalinfo.animal_id#</td>
-                                    <td>#animalinfo.name#</td>
-                                    <td>#animalinfo.inspect_date#</td>
-                                </tr>
-                            </cfoutput>
-                        </tbody>
-                    </table>
+                            <table class="table table-striped table-hover align-middle">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Animals</th>
+                                        <th scope="col">Last Inspection Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <cfoutput query="animalinfo">
+                                        <tr>
+                                            <td>#animalinfo.animal_id#</td>
+                                            <td>#animalinfo.name#</td>
+                                            <td>#animalinfo.inspect_date#</td>
+                                        </tr>
+                                    </cfoutput>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -80,26 +72,26 @@ SELECT * FROM [WorkCube].[dbo].[animal]
                     <div class="card h-100">
                         <div class="card-header">Milk Production</div>
                         <div class="card-body">
-                        <table class="table table-striped table-hover align-middle">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Animals</th>
-                                <th scope="col">Annual Milk Production (For 1 Animal (Liter))</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <cfoutput query="animalinfo">
-                                <tr>
-                                    <cfif Len(Trim(animalinfo.production)) GT 0>
-                                        <td>#animalinfo.animal_id#</td>
-                                        <td>#animalinfo.name#</td>
-                                        <td>#animalinfo.production#</td>
-                                    </cfif>
-                                </tr>
-                            </cfoutput>
-                        </tbody>
-                    </table>
+                            <table class="table table-striped table-hover align-middle">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Animals</th>
+                                        <th scope="col">Annual Milk Production (For 1 Animal (Liter))</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <cfoutput query="animalinfo">
+                                        <tr>
+                                            <cfif Len(Trim(animalinfo.production)) GT 0>
+                                                <td>#animalinfo.animal_id#</td>
+                                                <td>#animalinfo.name#</td>
+                                                <td>#animalinfo.production#</td>
+                                            </cfif>
+                                        </tr>
+                                    </cfoutput>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -109,24 +101,24 @@ SELECT * FROM [WorkCube].[dbo].[animal]
                     <div class="card h-100">
                         <div class="card-header">Feed Consumption</div>
                         <div class="card-body">
-                        <table class="table table-striped table-hover align-middle">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Animals</th>
-                                <th scope="col">Monthly Feed Consumption (For 1 Animal (Kg))</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <cfoutput query="animalinfo">
-                                <tr>
-                                    <td>#animalinfo.animal_id#</td>
-                                    <td>#animalinfo.name#</td>
-                                    <td>#animalinfo.consumption#</td>
-                                </tr>
-                            </cfoutput> 
-                        </tbody>
-                    </table>
+                            <table class="table table-striped table-hover align-middle">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Animals</th>
+                                        <th scope="col">Monthly Feed Consumption (For 1 Animal (Kg))</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <cfoutput query="animalinfo">
+                                        <tr>
+                                            <td>#animalinfo.animal_id#</td>
+                                            <td>#animalinfo.name#</td>
+                                            <td>#animalinfo.consumption#</td>
+                                        </tr>
+                                    </cfoutput> 
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
